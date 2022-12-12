@@ -1,3 +1,11 @@
+.texts{
+    text-align: center;
+    color: #fff;
+    font-size: 1000%;
+    font-family: "Great Vibes";
+    padding-top: 300px;
+}
+
 body{
   background-color: #504e4e;
 }
@@ -25,6 +33,8 @@ body{
   display: block;
   width: 12px;
   height: 28px;
+  border-radius: 50%;
+  margin: 20px;
   display: inline-block;
   background: #f02241;
   box-shadow: 0px 4.66667px 24px 3px #02241;
@@ -58,7 +68,7 @@ body{
   animation-duration:1.4s;
 }
 .strand li:before{
-  content:--;
+  content:"";
   position: absolute;
   backround: #222;
   width: 10px;
@@ -67,3 +77,80 @@ body{
   top: -4.66667px;
   left: 1px;
 }
+.strand li:after{
+  content:"";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 18.66667px;
+  border-bottom: solid #222 2px;
+}
+.strand li:last-child:after{
+  content: none;
+}
+.strand li:first-child{
+  margin-left: 40px;
+}
+@-webkit-keyframes flash-1{
+  0%,100%{
+    background: #f02241;
+  box-shadow: 0px 4.66667px 24px 3px #f02241;
+}
+
+50%{
+background:rgba(240,34,65,0.4);
+box-shadow: 0px 4.66667px 24px 3px rgba(240,35,65,.02);
+}
+}
+@keyframes flash-1{
+  0%
+  100%{
+    background:rgba(240,34,65,0.4);
+  box-shadow:0px 4.66667px 24px 3px rgba(240,35,65,0.2);
+  }
+}
+@-webkit-keyframes flash-2{
+  0,
+  100%{
+    background: #42b261;
+  box-shadow: 0px 4.66667px 24px 3px #42b261;
+  }
+50%{
+  background:rgba(66,178,97,0.4);
+box-shadow:0px 4.6667px 24px 3px rgba(66,178,97,0.2);
+}
+}
+@keyframes flash-2{
+    0%,
+    100% {
+    background: #42b261;
+    box-shadow: 0px 4.66667px 24px 3px #42b261;
+    }
+50%{
+  background: rgba(66,178,97,0.4);
+box-shadow: 0px 4.66667px 24px 3px rgba(66,178,97,0.2);
+}
+}
+@-webkit-keyframes flash-3{
+    0%,
+    100%{
+      background: #f9fbee;
+    box-shadow: 0px 4.6667px 24px 3px #f9fbee;
+    }
+50%{
+  background: rgba(249,251,238, .4);
+box-shadow: 0px 4.66667px 24px 3px rgba(249,251,238, .2);
+}
+@keyframes flash-3{
+0%,
+    100%{
+    background:#f9fbee;
+    box-shadow: 0px 4.66667px 24px 3px #f9fbee;
+   }
+50%{
+  background: rgba(249,251,238,0.4);
+box-shadow:0px 4.66667px 24px 3px rgba(249,251,238,0.2);
+}
+}
+
